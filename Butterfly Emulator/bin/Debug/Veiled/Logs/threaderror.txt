@@ -1,0 +1,108 @@
+
+Error in thread Connection checker task: 
+TokenID: 1System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 3System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 5System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 6System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 7System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 8System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 9System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 10System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 11System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 12System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 13System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 14System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 15System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 16System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 17System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 18System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 19System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
+
+Error in thread Connection checker task: 
+TokenID: 20System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.HabboHotel.GameClients.GameClientManager.TestClientConnections() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClientManager.cs:line 326
+
