@@ -1,0 +1,15 @@
+
+Exception logged 03.03.2012 17:59:58 in packet handling:
+System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.
+   at Butterfly.Net.GamePacketParser.handlePacketData(Byte[] data)
+Source:
+Butterfly Emulator
+Data:
+Message:
+Exception of type 'System.OutOfMemoryException' was thrown.
+Stack trace:
+   at Butterfly.Net.GamePacketParser.handlePacketData(Byte[] data)
+
+
+
+

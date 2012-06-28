@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Butterfly.Collections
+namespace Collections
 {
     public delegate void onCycleDoneDelegate();
 
@@ -42,18 +42,6 @@ namespace Butterfly.Collections
                 return collection.Keys;
             }
         }
-
-        internal Dictionary<T, V> Inner
-        {
-            get
-            {
-                return collection;
-            }
-            set
-            {
-                collection = value;
-            }
-        }
         #endregion
 
         #region Constructor
@@ -64,6 +52,12 @@ namespace Butterfly.Collections
             this.addQueue = new Queue();
             this.updateQueue = new Queue();
             this.removeQueue = new Queue();
+
+            this.onAdd = new EventHandler(onAddItem);
+            this.onUpdate = new EventHandler(onUpdate);
+            this.onRemove = new EventHandler(onRemove);
+            this.onCycleDone = new EventHandler(onCycleDone);
+
             this.onCycleEventQueue = new Queue();
         }
 
@@ -121,11 +115,7 @@ namespace Butterfly.Collections
                     while (addQueue.Count > 0)
                     {
                         KeyValuePair<T, V> pair = (KeyValuePair<T, V>)addQueue.Dequeue();
-
-                        if (collection.ContainsKey(pair.Key))
-                            collection[pair.Key] = pair.Value;
-                        else
-                            collection.Add(pair.Key, pair.Value);
+                        collection.Add(pair.Key, pair.Value);
 
                         if (onAdd != null)
                             onAdd(pair, null);
@@ -289,29 +279,6 @@ namespace Butterfly.Collections
         internal List<KeyValuePair<T, V>> ToList()
         {
             return collection.ToList();
-        }
-
-        internal void Destroy()
-        {
-            if (collection != null)
-                collection.Clear();
-            if (addQueue != null)
-                addQueue.Clear();
-            if (updateQueue != null)
-                updateQueue.Clear();
-            if (removeQueue != null)
-                removeQueue.Clear();
-            if (onCycleEventQueue != null)
-                onCycleEventQueue.Clear();
-            collection = null;
-            addQueue = null;
-            updateQueue = null;
-            removeQueue = null;
-            onCycleEventQueue = null;
-            onAdd = null;
-            onUpdate = null;
-            onRemove = null;
-            onCycleDone = null;
         }
         #endregion
     }

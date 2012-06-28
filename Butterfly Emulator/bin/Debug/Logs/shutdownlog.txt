@@ -1,0 +1,70 @@
+
+Hotel pre-warning =>[0 s, 1 ms]
+Socket close =>[0 s, 0 ms]
+Furni pre-save and connection close =>[0 s, 814 ms]
+Room destructor =>[0 s, 97 ms]
+Database pre-save =>[0 s, 73 ms]
+Connection shutdown =>[0 s, 58 ms]
+Game destroy =>[0 s, 122 ms]
+Database shutdown =>[0 s, 1 ms]
+Total time on shutdown 1 s, 191 ms
+You have reached ==> [END OF SESSION]
+
+
+
+
+Hotel pre-warning =>[0 s, 1 ms]
+Socket close =>[0 s, 1 ms]
+Furni pre-save and connection close =>[0 s, 304 ms]
+Room destructor =>[0 s, 158 ms]
+Database pre-save =>[0 s, 222 ms]
+Connection shutdown =>[0 s, 183 ms]
+Game destroy =>[0 s, 112 ms]
+Database shutdown =>[0 s, 0 ms]
+Total time on shutdown 1 s, 6 ms
+You have reached ==> [END OF SESSION]
+
+
+
+
+Hotel pre-warning =>[0 s, 0 ms]
+Socket close =>[0 s, 1 ms]
+Furni pre-save and connection close =>[0 s, 123 ms]
+Room destructor =>[0 s, 31 ms]
+Database pre-save =>[0 s, 90 ms]
+Connection shutdown =>[0 s, 48 ms]
+Game destroy =>[0 s, 126 ms]
+Database shutdown =>[0 s, 1 ms]
+Total time on shutdown 0 s, 445 ms
+You have reached ==> [END OF SESSION]
+
+
+
+
+Hotel pre-warning =>[0 s, 2 ms]
+Socket close =>[0 s, 7 ms]
+Furni pre-save and connection close =>[0 s, 207 ms]
+Room destructor =>[0 s, 48 ms]
+Database pre-save =>[0 s, 105 ms]
+Connection shutdown =>[0 s, 97 ms]
+Game destroy =>[0 s, 121 ms]
+Database shutdown =>[0 s, 1 ms]
+Total time on shutdown 0 s, 617 ms
+You have reached ==> [END OF SESSION]
+
+
+
+
+Hotel pre-warning =>[0 s, 0 ms]
+Socket close =>[0 s, 0 ms]
+Furni pre-save and connection close =>[0 s, 141 ms]
+Room destructor =>[0 s, 128 ms]
+Database pre-save =>[0 s, 75 ms]
+Connection shutdown =>[0 s, 88 ms]
+Game destroy =>[0 s, 130 ms]
+Database shutdown =>[0 s, 1 ms]
+Total time on shutdown 0 s, 589 ms
+You have reached ==> [END OF SESSION]
+
+
+

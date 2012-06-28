@@ -1,0 +1,266 @@
+
+Error in packet clap: 
+TokenID: 4System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 5System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 1System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 2System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 3System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 4System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode)
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms()
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler)
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+Error in packet clap: 
+TokenID: 1System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigatorRooms(ServerMessage& reply, KeyValuePair`2[] rooms)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode)
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms()
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler)
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+Error in packet clap: 
+TokenID: 2System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigatorRooms(ServerMessage& reply, KeyValuePair`2[] rooms)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category)
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode)
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms()
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler)
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+Error in packet clap: 
+TokenID: 1System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Butterfly.HabboHotel.Rooms.RoomManager.GetRooms(Int32 categoryID) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Rooms\RoomManager.cs:line 68
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeActiveRooms(Int32 category) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 359
+   at Butterfly.HabboHotel.Navigators.Navigator.SerializeNavigator(GameClient session, Int32 mode) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\Navigators\Navigator.cs:line 373
+   at Butterfly.Messages.GameClientMessageHandler.GetPopularRooms() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Navigator.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GetPopularRooms(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 317
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 2System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.Messages.GameClientMessageHandler.SendSessionParams() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Handshake.cs:line 36
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendSessionParams(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 4System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Butterfly.Messages.ServerMessage.Bytes() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ServerMessage.cs:line 72
+   at Butterfly.Messages.GameClientMessageHandler.SendSessionParams() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Handshake.cs:line 36
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendSessionParams(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 107
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 1System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 2System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 3System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 4System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 5System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 6System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 7System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 8System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 9System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredUInt() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 224
+   at Butterfly.Messages.GameClientMessageHandler.TriggerItem() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2192
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.TriggerItem(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 632
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 10System.NullReferenceException: Object reference not set to an instance of an object.
+   at Butterfly.Messages.ClientMessage.get_RemainingLength() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 33
+   at Butterfly.Messages.ClientMessage.PopWiredInt32() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\ClientMessages\ClientMessage.cs:line 207
+   at Butterfly.Messages.GameClientMessageHandler.ApplyEffect() in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\Requests\Rooms.cs:line 2714
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.ApplyEffect(GameClientMessageHandler handler) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:line 717
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:line 25
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\Messages\GameClientMessageHander.cs:line 57
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\Martin\Desktop\Source\trunk\Emulator\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:line 71
+
+
+Error in packet clap: 
+TokenID: 1System.NullReferenceException: No user found in database
+   at Butterfly.HabboHotel.Support.ModerationTool.SerializeUserInfo(UInt32 UserId)
+   at Butterfly.Messages.GameClientMessageHandler.ModGetUserInfo()
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.ModGetUserInfo(GameClientMessageHandler handler)
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+Error in packet clap: 
+TokenID: 1System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Butterfly.Messages.ClientMessage.AdvancePointer(Int32 i)
+   at Butterfly.HabboHotel.Rooms.Wired.WiredSaver.HandleSave(UInt32 itemID, Room room, ClientMessage clientMessage)
+   at Butterfly.Messages.GameClientMessageHandler.SaveWired()
+   at Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SaveWired(GameClientMessageHandler handler)
+   at Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message, Int32 messageID)
+   at Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request, Int32 messageID)
+   at Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message, Int32 messageID)
+
