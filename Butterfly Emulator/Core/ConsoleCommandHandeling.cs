@@ -81,6 +81,7 @@ namespace Butterfly.Core
 
                             break;
                         }
+                    case "stop":
                     case "shutdown":
                         {
 

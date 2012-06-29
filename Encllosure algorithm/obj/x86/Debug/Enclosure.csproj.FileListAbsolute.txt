@@ -27,3 +27,12 @@ C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Encllosure algorithm\obj\x
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Encllosure algorithm\obj\x86\Debug\Enclosure.csproj.GenerateResource.Cache
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Encllosure algorithm\obj\x86\Debug\enclosuretest.dll
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Encllosure algorithm\obj\x86\Debug\enclosuretest.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\obj\x86\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\obj\x86\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\obj\x86\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\obj\x86\Debug\enclosuretest.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Encllosure algorithm\obj\x86\Debug\enclosuretest.pdb

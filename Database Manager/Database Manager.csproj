@@ -43,7 +43,6 @@
     <Compile Include="Database_Manager\Database\Session_Details\Interfaces\IDatabaseClient.cs" />
     <Compile Include="Database_Manager\Database\Session_Details\MsSqlQueryReactor.cs" />
     <Compile Include="Database_Manager\Database\Session_Details\MSSQLQueryAdapter.cs" />
-    <Compile Include="Global.cs" />
     <Compile Include="Database_Manager\Session_Details\Interfaces\IRegularQueryAdapter.cs" />
     <Compile Include="Database_Manager\Database\Session_Details\QueryAdapter.cs" />
     <Compile Include="Database_Manager\Database\Session_Details\Interfaces\IQueryAdapter.cs" />

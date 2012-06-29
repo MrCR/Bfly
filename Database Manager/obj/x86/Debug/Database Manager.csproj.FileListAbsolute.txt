@@ -22,3 +22,11 @@ C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Database Manager\bin\Debug
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Database Manager\obj\x86\Debug\Database Manager.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Database Manager\obj\x86\Debug\Database Manager.dll
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\obj\x86\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Database Manager\obj\x86\Debug\Database Manager.pdb

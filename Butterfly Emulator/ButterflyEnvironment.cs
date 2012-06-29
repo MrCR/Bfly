@@ -280,18 +280,6 @@ namespace Butterfly
             return Game;
         }
 
-        //internal static Game GameInstance
-        //{
-        //    get
-        //    {
-        //        return Game;
-        //    }
-        //    set
-        //    {
-        //        Game = value;
-        //    }
-        //}
-
         internal static void Destroy()
         {
             isLive = false;
@@ -307,7 +295,6 @@ namespace Butterfly
             {
                 Logging.WriteLine("Destroying connection manager.");
                 GetConnectionManager().Destroy();
-                //ConnectionManager = null;
             }
 
             if (manager != null)
@@ -315,10 +302,7 @@ namespace Butterfly
                 try
                 {
                     Logging.WriteLine("Destroying database manager.");
-                    //GetDatabase().StopClientMonitor();
                     manager.destroy();
-                    //GetDatabase().DestroyDatabaseManager();
-                    //DatabaseManager = null;
                 }
                 catch { }
             }
@@ -397,11 +381,8 @@ namespace Butterfly
 
             using (IQueryAdapter dbClient = manager.getQueryreactor())
             {
-               // dbClient.runFastQuery("TRUNCATE TABLE user_tickets");
                 dbClient.runFastQuery("TRUNCATE TABLE user_online");
                 dbClient.runFastQuery("TRUNCATE TABLE room_active");
-                //dbClient.runFastQuery("UPDATE users SET online = 0");
-                //dbClient.runFastQuery("UPDATE rooms SET users_now = 0");
             }
             AppendTimeStampWithComment(ref builder, DbSave, "Database pre-save");
 
