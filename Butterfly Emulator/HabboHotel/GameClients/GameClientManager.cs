@@ -225,7 +225,7 @@ namespace Butterfly.HabboHotel.GameClients
                 Console.WriteLine("BroadcastPackets worker took really long time to cycle! " + (int)spent.TotalSeconds + "s");
         }
 
-        private static DateTime pixelLastExecution;
+        //private static DateTime pixelLastExecution;
         private void CheckCycleUpdates()
         {
             if (cyclePixelsEnabled)

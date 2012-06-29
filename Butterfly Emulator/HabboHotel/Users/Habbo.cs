@@ -91,10 +91,10 @@ namespace Butterfly.HabboHotel.Users
         internal int CurrentQuestProgress;
         internal uint LastQuestId;
 
-        internal int LevelBuilder;
-        internal int LevelSocial;
-        internal int LevelIdentity;
-        internal int LevelExplorer;
+        //internal int LevelBuilder;
+        //internal int LevelSocial;
+        //internal int LevelIdentity;
+        //internal int LevelExplorer;
 
 
         internal Boolean InRoom

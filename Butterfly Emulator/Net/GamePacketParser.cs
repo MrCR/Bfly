@@ -45,7 +45,7 @@ namespace Butterfly.Net
                         using (ClientMessage message = ClientMessageFactory.GetClientMessage(MessageId, Content))
                         {
                             onNewPacket.Invoke(message);
-                            //Logging.WriteLine("New Packet: ID:> " + MessageId  + " Content:> " + Encoding.Default.GetString(Content));
+                            Logging.WriteLine("New Packet: ID:> " + MessageId  + " Content:> " + Encoding.Default.GetString(Content));
                             //Logging.WriteLine(Encoding.Default.GetString(Content));
                         }
                     }

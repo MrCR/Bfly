@@ -23,8 +23,8 @@ namespace Butterfly.HabboHotel.GameClients
         private Habbo Habbo;
 
         internal DateTime TimePingedReceived;
-        internal DateTime TimePingSent;
-        internal DateTime TimePingLastControl;
+        //internal DateTime TimePingSent;
+        //internal DateTime TimePingLastControl;
 
         internal bool SetDoorPos;
         internal Point newDoorPos;

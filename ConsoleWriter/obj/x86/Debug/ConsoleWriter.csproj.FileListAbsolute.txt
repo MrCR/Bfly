@@ -12,3 +12,8 @@ C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\ConsoleWriter\bin\Debug\Co
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\ConsoleWriter\obj\x86\Debug\ConsoleWriter.dll
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\ConsoleWriter\obj\x86\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\ConsoleWriter\obj\x86\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Bfly\Bfly\ConsoleWriter\obj\x86\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\ConsoleWriter\obj\x86\Debug\ConsoleWriter.pdb

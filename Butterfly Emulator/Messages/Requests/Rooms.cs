@@ -2220,7 +2220,7 @@ namespace Butterfly.Messages
             RoomItem Item = Room.GetRoomItemHandler().GetItem(itemID);
 
 
-            if (Session.GetHabbo().Username == "martinmine")
+            if (Session.GetHabbo().Username == "DebugUser")
             {
                 StringBuilder builder = new StringBuilder();
                 builder.AppendLine("ItemID information for ID " + itemID);

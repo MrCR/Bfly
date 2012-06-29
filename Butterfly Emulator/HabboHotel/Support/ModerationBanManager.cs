@@ -89,7 +89,10 @@ namespace Butterfly.HabboHotel.Support
             string Var = Client.GetHabbo().Username;
             string RawVar = "user";
             Double Expire = ButterflyEnvironment.GetUnixTimestamp() + LengthSeconds;
-
+            if (Reason == null)
+            {
+                Reason = "The moderator didn't specify a reason";
+            }
             if (IpBan)
             {
                 Type = ModerationBanType.IP;

@@ -56,3 +56,17 @@ C:\Users\Gabriel\C#\Bfly\Bfly\ServerSide\obj\Debug\SharedPacketLib.Properties.Re
 C:\Users\Gabriel\C#\Bfly\Bfly\ServerSide\obj\Debug\Connection Manager.csproj.GenerateResource.Cache
 C:\Users\Gabriel\C#\Bfly\Bfly\ServerSide\obj\Debug\Connection Manager.dll
 C:\Users\Gabriel\C#\Bfly\Bfly\ServerSide\obj\Debug\Connection Manager.pdb
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Connection Manager.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Connection Manager.pdb
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Database Manager.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Helpers.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Database Manager.pdb
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\bin\Debug\Helpers.pdb
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\obj\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\obj\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\obj\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\obj\Debug\Connection Manager.dll
+C:\Users\Gabriel\C#\Git\Bfly\ServerSide\obj\Debug\Connection Manager.pdb

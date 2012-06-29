@@ -9,7 +9,7 @@ namespace Butterfly.ServerManager
     static class SessionManagement
     {
         private static List<Session> mSessions;
-        private static Thread performanceThread;
+        //private static Thread performanceThread;
 
         internal static void Init()
         {

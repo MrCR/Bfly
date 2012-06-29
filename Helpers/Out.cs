@@ -118,13 +118,13 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            if (minimumImportance > logFlags.lowLogLevel)
-                return;
+            //if (minimumImportance > logFlags.lowLogLevel)
+            //    return;
 
-            DateTime _DTN = DateTime.Now;
-            StackFrame _SF = new StackTrace().GetFrame(1);
+            //DateTime _DTN = DateTime.Now;
+            //StackFrame _SF = new StackTrace().GetFrame(1);
 
-            enQueueItem( new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeNormal));
+            //enQueueItem( new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeNormal));
 
         }
         /// <summary>
@@ -137,11 +137,11 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            if (flag < minimumImportance)
-                return;
-            DateTime _DTN = DateTime.Now;
-            StackFrame _SF = new StackTrace().GetFrame(1);
-            enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeNormal));
+            //if (flag < minimumImportance)
+            //    return;
+            //DateTime _DTN = DateTime.Now;
+            //StackFrame _SF = new StackTrace().GetFrame(1);
+            //enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeNormal));
         }
 
         /// <summary>
@@ -157,11 +157,11 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            if (logFlag < minimumImportance)
-                return;
-            DateTime _DTN = DateTime.Now;
-            StackFrame _SF = new StackTrace().GetFrame(1);
-            enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialColorLine, colorOne, colorTwo));
+        //    if (logFlag < minimumImportance)
+        //        return;
+        //    DateTime _DTN = DateTime.Now;
+        //    StackFrame _SF = new StackTrace().GetFrame(1);
+        //    enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialColorLine, colorOne, colorTwo));
         }
 
        
@@ -175,10 +175,10 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            DateTime _DTN = DateTime.Now;
-            StackFrame _SF = new StackTrace().GetFrame(1);
+            //DateTime _DTN = DateTime.Now;
+            //StackFrame _SF = new StackTrace().GetFrame(1);
 
-            enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialColorLine, ConsoleColor.Red, ConsoleColor.DarkRed));
+            //enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialColorLine, ConsoleColor.Red, ConsoleColor.DarkRed));
         }
 
         /// <summary>
@@ -190,10 +190,10 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            if (flag < minimumImportance)
-                return;
+            //if (flag < minimumImportance)
+            //    return;
 
-            enQueueItem(new PrintItem(logText.Replace(Convert.ToChar(13).ToString(), "{13}"), null, null, null, null, writePlain));
+            //enQueueItem(new PrintItem(logText.Replace(Convert.ToChar(13).ToString(), "{13}"), null, null, null, null, writePlain));
 
         }
         /// <summary>
@@ -220,11 +220,11 @@ namespace Helpers
             Writer.WriteLine(logText);
             return;
 
-            if (flag < minimumImportance)
-                return;
-            DateTime _DTN = DateTime.Now;
-            StackFrame _SF = new StackTrace().GetFrame(1);
-            enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialLineWithHeaderHead, headerColor, colorTwo, headerHead));
+            //if (flag < minimumImportance)
+            //    return;
+            //DateTime _DTN = DateTime.Now;
+            //StackFrame _SF = new StackTrace().GetFrame(1);
+            //enQueueItem(new PrintItem(logText, _SF.GetMethod().Name, _SF.GetMethod().ReflectedType.Name, _DTN.ToLongTimeString(), _DTN.Millisecond.ToString(), writeSpecialLineWithHeaderHead, headerColor, colorTwo, headerHead));
 
         }
         

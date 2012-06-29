@@ -5,6 +5,7 @@ using Butterfly.HabboHotel.Catalogs;
 using Butterfly.HabboHotel.Items;
 using Butterfly.Core;
 using Database_Manager.Database.Session_Details.Interfaces;
+using Butterfly.HabboHotel.GameClients;
 
 namespace Butterfly.Messages
 {

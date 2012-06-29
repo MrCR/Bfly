@@ -203,7 +203,6 @@ namespace Butterfly.HabboHotel.Catalogs
             {
                 return null;
             }
-
             return Pages[Page];
         }
 

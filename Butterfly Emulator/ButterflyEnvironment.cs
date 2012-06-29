@@ -123,7 +123,7 @@ namespace Butterfly
 
                 Logging.WriteLine("ENVIRONMENT -> READY! (" + TimeUsed.Seconds + " s, " + TimeUsed.Milliseconds + " ms)");
                 isLive = true;
-                if (System.Diagnostics.Debugger.IsAttached)
+                if (System.Diagnostics.Debugger.IsAttached || Configuration.data["debug.console"] == "1")
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Logging.WriteLine("Server is debugging: Console writing enabled");

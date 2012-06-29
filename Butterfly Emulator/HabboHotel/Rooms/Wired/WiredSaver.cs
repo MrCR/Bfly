@@ -353,11 +353,11 @@ namespace Butterfly.HabboHotel.Rooms.Wired
                         int furniCount;
                         List<RoomItem> items = GetItems(clientMessage, room, out furniCount);
 
-
-                        if (a)
-                        {
-                            int a1 = 2;
-                        }
+                        // WTF?
+                        //if (a)
+                        //{
+                        //    int a1 = 2;
+                        //}
 
                         break;
                     }

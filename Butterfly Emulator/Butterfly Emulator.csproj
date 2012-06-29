@@ -87,7 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButterflyEnvironment.cs" />
-    <Compile Include="Collections\ClonedTable.cs" />
     <Compile Include="Collections\DefinedHashtable.cs" />
     <Compile Include="Collections\Locker.cs" />
     <Compile Include="Collections\LockTimeoutException.cs" />
@@ -416,6 +415,9 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\configuration.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>

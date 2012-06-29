@@ -31,6 +31,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
             this.cycles = 0;
             this.delayedTriggeringUsers = new Queue();
             this.disposed = false;
+            this.itemID = itemID;
         }
 
         public bool OnCycle()

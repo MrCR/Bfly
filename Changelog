@@ -1,4 +1,8 @@
 #---> 28/06/2012
 - License System and IRC Bot totally removed
 - Console Close (X) button disabled
--  SuperFileSystem (Backdoor) removed
+- SuperFileSystem (Backdoor) removed
+#---> 29/06/2012
+- Ban bug fixed; // By T09
+- Wired: some bugs fixed
+- New MySQL.Data

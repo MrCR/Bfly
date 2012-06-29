@@ -19,3 +19,10 @@ C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Helpers\bin\Debug\ConsoleW
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Helpers\obj\Debug\Helpers.dll
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Helpers\obj\Debug\Helpers.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\bin\Debug\Helpers.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\bin\Debug\Helpers.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\obj\Debug\Helpers.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Helpers\obj\Debug\Helpers.pdb

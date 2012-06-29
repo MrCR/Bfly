@@ -17,7 +17,7 @@ namespace testForm
         Dictionary<Point, TestWire> yaaaay = new Dictionary<Point, TestWire>(); //List of items at point T
         WireCurrentTransfer selectedTranser = WireCurrentTransfer.NONE;
         CurrentType newType = CurrentType.OFF;
-        private bool removeWire;
+        //private bool removeWire;
 
         public Form1()
         {
@@ -83,11 +83,11 @@ namespace testForm
         {
            TestWire origin = sender as TestWire;
            List<Point> result = null;
-           if (removeWire)
-           {
-               result = wireSolver.RemoveWire(origin.LocationPoint.X, origin.LocationPoint.Y);
-           }
-           else
+           //if (removeWire)
+           //{
+           //    result = wireSolver.RemoveWire(origin.LocationPoint.X, origin.LocationPoint.Y);
+           //}
+           //else
            {
                result = wireSolver.AddOrUpdateWire(origin.LocationPoint.X, origin.LocationPoint.Y, this.newType, this.selectedTranser);
            }
