@@ -16,6 +16,7 @@ namespace Butterfly.Messages
 
         internal void GetHelpCategories()
         {
+
             Session.SendMessage(ButterflyEnvironment.GetGame().GetHelpTool().SerializeIndex());
         }
 
@@ -319,45 +320,53 @@ namespace Butterfly.Messages
 
         internal void CallGuideBot()
         {
-            Room Room = ButterflyEnvironment.GetGame().GetRoomManager().GetRoom(Session.GetHabbo().CurrentRoomId);
-
-            if (Room == null || !Room.CheckRights(Session, true))
+            if (Session.GetHabbo().SpectatorMode)
             {
-                return;
+                Session.GetHabbo().SpectatorMode = false;
+                Session.SendNotif(LanguageLocale.GetValue("invisible.disabled"));
             }
-
-            if (Room.guideBotIsCalled)
+            else
             {
-                Session.GetMessageHandler().GetResponse().Init(33);
-                Session.GetMessageHandler().GetResponse().AppendInt32(4009);
-                Session.GetMessageHandler().SendResponse();
+                Room Room = ButterflyEnvironment.GetGame().GetRoomManager().GetRoom(Session.GetHabbo().CurrentRoomId);
 
-                return;
+                if (Room == null || !Room.CheckRights(Session, true))
+                {
+                    return;
+                }
+
+                if (Room.guideBotIsCalled)
+                {
+                    Session.GetMessageHandler().GetResponse().Init(33);
+                    Session.GetMessageHandler().GetResponse().AppendInt32(4009);
+                    Session.GetMessageHandler().SendResponse();
+
+                    return;
+                }
+
+                if (Session.GetHabbo().CalledGuideBot)
+                {
+                    Session.GetMessageHandler().GetResponse().Init(33);
+                    Session.GetMessageHandler().GetResponse().AppendInt32(4010);
+                    Session.GetMessageHandler().SendResponse();
+
+                    return;
+                }
+
+                RoomUser NewUser = Room.DeployBot(ButterflyEnvironment.GetGame().GetBotManager().GetBot(55));
+                NewUser.SetPos(Room.GetGameMap().Model.DoorX, Room.GetGameMap().Model.DoorY, Room.GetGameMap().Model.DoorZ);
+                NewUser.UpdateNeeded = true;
+
+                RoomUser RoomOwner = Room.GetRoomUserManager().GetRoomUserByHabbo(Room.Owner);
+
+                if (RoomOwner != null)
+                {
+                    NewUser.MoveTo(RoomOwner.Coordinate);
+                    NewUser.SetRot(Rotation.Calculate(NewUser.X, NewUser.Y, RoomOwner.X, RoomOwner.Y), false);
+                }
+
+
+                Session.GetHabbo().CalledGuideBot = true;
             }
-
-            if (Session.GetHabbo().CalledGuideBot)
-            {
-                Session.GetMessageHandler().GetResponse().Init(33);
-                Session.GetMessageHandler().GetResponse().AppendInt32(4010);
-                Session.GetMessageHandler().SendResponse();
-
-                return;
-            }
-
-            RoomUser NewUser = Room.DeployBot(ButterflyEnvironment.GetGame().GetBotManager().GetBot(55));
-            NewUser.SetPos(Room.GetGameMap().Model.DoorX, Room.GetGameMap().Model.DoorY, Room.GetGameMap().Model.DoorZ);
-            NewUser.UpdateNeeded = true;
-
-            RoomUser RoomOwner = Room.GetRoomUserManager().GetRoomUserByHabbo(Room.Owner);
-
-            if (RoomOwner != null)
-            {
-                NewUser.MoveTo(RoomOwner.Coordinate);
-                NewUser.SetRot(Rotation.Calculate(NewUser.X, NewUser.Y, RoomOwner.X, RoomOwner.Y), false);
-            }
-
-            
-            Session.GetHabbo().CalledGuideBot = true;
         }
 
         //internal void RegisterHelp()

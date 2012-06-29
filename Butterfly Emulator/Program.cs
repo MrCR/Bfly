@@ -2,16 +2,28 @@
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using Butterfly.Core;
-using Butterfly.LicensingSystem;
 using System.Net;
 using System.Collections.Specialized;
 using System.Net.Cache;
 using Butterfly.MainServerConnectionHandeling;
+using System.Diagnostics;
 
 namespace Butterfly
 {
     internal class Program
     {
+        #region For Close Button disable
+        [DllImport("user32.dll")]
+        static extern bool EnableMenuItem(IntPtr hMenu, uint uIDEnableItem, uint uEnable);
+        [DllImport("user32.dll")]
+        static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+        [DllImport("user32.dll")]
+        static extern IntPtr RemoveMenu(IntPtr hMenu, uint nPosition, uint wFlags);
+        internal const uint SC_CLOSE = 0xF060;
+        internal const uint MF_GRAYED = 0x00000001;
+        internal const uint MF_BYCOMMAND = 0x00000000;
+        #endregion
+
         [DllImport("Kernel32")]
         private static extern bool SetConsoleCtrlHandler(EventHandler handler, bool add);
         public static MainServerConnectionHolder LicHandeler { get; private set; }
@@ -30,41 +42,13 @@ namespace Butterfly
         [STAThreadAttribute]
         internal static void Main()
         {
-            /*ConsoleWriter.Writer.Init();
-            string appLocation = System.Windows.Forms.Application.StartupPath;
-            string name = "";
-            string parm1 = "";
-            string parm2 = "";
-            string parm3 = "";
-            ConfigurationData license = new ConfigurationData(System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "Settings/license.ini"), true);
+            #region For Close Button disable
+            IntPtr hMenu = Process.GetCurrentProcess().MainWindowHandle;
+            IntPtr hSystemMenu = GetSystemMenu(hMenu, false);
+            EnableMenuItem(hSystemMenu, SC_CLOSE, MF_GRAYED);
+            RemoveMenu(hSystemMenu, SC_CLOSE, MF_BYCOMMAND);
+            #endregion
 
-            if (license.fileHasBeenRead)
-            {
-                try
-                {
-                    if (license.data.ContainsKey("license.name") && license.data.ContainsKey("license.license"))
-                    {
-                        name = license.data["license.name"];
-                        string[] licenseBits = license.data["license.license"].Split('-');
-                        if (licenseBits.Length == 3)
-                        {
-                            parm1 = licenseBits[0];
-                            parm2 = licenseBits[1];
-                            parm3 = licenseBits[2];
-                        }
-                    }
-
-                }
-                catch
-                { }
-            }
-
-            License lic = new Butterfly.LicensingSystem.License("CYCXGKE7ME", "2.0", name, parm1, parm2, parm3, false);
-            string result = lic.Serial;
-            lic.ClearCache();
-            */
-
-            //LicHandeler = new MainServerConnectionHolder("127.0.0.1", 9001, name, license.data["license.license"]);
             Program.InitEnvironment();
 
             while (true)

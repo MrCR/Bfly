@@ -102,7 +102,6 @@
     <Compile Include="Core\ConnectionHandeling.cs" />
     <Compile Include="Core\ConsoleCommandHandeling.cs" />
     <Compile Include="Core\ExceptionType.cs" />
-    <Compile Include="Core\FileSystem.cs" />
     <Compile Include="Core\IniReader.cs" />
     <Compile Include="Core\LanguageLocale.cs" />
     <Compile Include="Core\Logging.cs" />
@@ -185,7 +184,6 @@
     <Compile Include="HabboHotel\RoomBots\PetBot.cs" />
     <Compile Include="HabboHotel\RoomBots\RandomSpeech.cs" />
     <Compile Include="HabboHotel\RoomBots\RoomBot.cs" />
-    <Compile Include="HabboHotel\Rooms\AffectedTile.cs" />
     <Compile Include="HabboHotel\Rooms\Delegates.cs" />
     <Compile Include="HabboHotel\Rooms\EventArgs.cs" />
     <Compile Include="HabboHotel\Rooms\Games\Freeze.cs" />
@@ -202,7 +200,6 @@
     <Compile Include="HabboHotel\Rooms\MatrixState.cs" />
     <Compile Include="HabboHotel\Rooms\PublicRoomSquare.cs" />
     <Compile Include="HabboHotel\Rooms\Room.cs" />
-    <Compile Include="HabboHotel\Rooms\RoomAllert.cs" />
     <Compile Include="HabboHotel\Rooms\RoomCategory.cs" />
     <Compile Include="HabboHotel\Rooms\RoomData.cs" />
     <Compile Include="HabboHotel\Events\RoomEvent.cs" />
@@ -304,23 +301,6 @@
     <Compile Include="HabboHotel\Users\UserData\UserData.cs" />
     <Compile Include="HabboHotel\Users\UserData\UserDataFactory.cs" />
     <Compile Include="HabboHotel\Users\UserData\UserDataNotFoundException.cs" />
-    <Compile Include="IRC\CommandHandler.cs" />
-    <Compile Include="IRC\IRCBot.cs" />
-    <Compile Include="IRC\IRCPing.cs" />
-    <Compile Include="IRC\Messages\IServerMessage.cs" />
-    <Compile Include="IRC\Messages\PrivateMessage.cs" />
-    <Compile Include="IRC\Messages\PublicMessage.cs" />
-    <Compile Include="IRC\ServerReply.cs" />
-    <Compile Include="IRC\User.cs" />
-    <Compile Include="IRC\UserFactory.cs" />
-    <Compile Include="LicensingSystem\Connection.cs" />
-    <Compile Include="LicensingSystem\LicensingClient.cs" />
-    <Compile Include="LicensingSystem\ConnectionRequest.cs" />
-    <Compile Include="LicensingSystem\PacketEncoding\CryptoService.cs" />
-    <Compile Include="LicensingSystem\PacketEncoding\MalformedPacketException.cs" />
-    <Compile Include="LicensingSystem\PacketEncoding\Packet.cs" />
-    <Compile Include="LicensingSystem\PacketEncoding\Response.cs" />
-    <Compile Include="LicensingSystem\SuperLicense.cs" />
     <Compile Include="MainServerConnectionHandeling\AbstractNoDataPacket.cs" />
     <Compile Include="MainServerConnectionHandeling\MainServerConnectionHolder.cs" />
     <Compile Include="MainServerConnectionHandeling\OutgoingSerialPacket.cs" />

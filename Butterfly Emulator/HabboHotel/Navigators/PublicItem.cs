@@ -71,38 +71,40 @@ namespace Butterfly.HabboHotel.Navigators
 
         internal void Serialize(ServerMessage Message)
         {
+            Message.AppendInt32(Id);
+
+            if (Category)
+            {
+                Message.AppendStringWithBreak(Caption);
+            }
+            else
+            {
+                Message.AppendStringWithBreak(RoomData.Name);
+            }
+
+            Message.AppendStringWithBreak(RoomData.Description);
+            Message.AppendInt32(Type);
+            Message.AppendStringWithBreak(Caption);
+            Message.AppendStringWithBreak((ImageType == PublicImageType.EXTERNAL) ? Image : "");
+
+
             if (!Category)
             {
-                Message.AppendInt32(Id);
-
-                Message.AppendStringWithBreak((Type == 1) ? Caption : RoomData.Name);
-
-                Message.AppendStringWithBreak(RoomData.Description);
-                Message.AppendInt32(Type);
-                Message.AppendStringWithBreak(Caption);
-                Message.AppendStringWithBreak((ImageType == PublicImageType.EXTERNAL) ? Image : string.Empty);
-                Message.AppendInt32(ParentId);
+                Message.AppendUInt(0);
                 Message.AppendInt32(RoomData.UsersNow);
                 Message.AppendInt32(3);
-                Message.AppendStringWithBreak((ImageType == PublicImageType.INTERNAL) ? Image : string.Empty);
+                Message.AppendStringWithBreak((ImageType == PublicImageType.INTERNAL) ? Image : "");
                 Message.AppendUInt(1337);
-                Message.AppendBoolean(true);
+                Message.AppendInt32(0);
                 Message.AppendStringWithBreak(RoomData.CCTs);
                 Message.AppendInt32(RoomData.UsersMax);
                 Message.AppendUInt(RoomId);
             }
-            else if (Category)
+            else
             {
-                Message.AppendInt32(Id);
-                Message.AppendStringWithBreak(Caption);
-                Message.AppendStringWithBreak(string.Empty);
-                Message.AppendBoolean(true);
-                Message.AppendStringWithBreak(string.Empty);
-                Message.AppendStringWithBreak(string.Empty);
-                Message.AppendBoolean(false);
-                Message.AppendBoolean(false);
+                Message.AppendInt32(0);
                 Message.AppendInt32(4);
-                Message.AppendBoolean(false);
+                Message.AppendInt32(3);
             }
         }
     }

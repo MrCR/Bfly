@@ -11,7 +11,6 @@ using Butterfly.HabboHotel.Items;
 using Butterfly.HabboHotel.Rooms;
 using Butterfly.HabboHotel.Rooms.RoomIvokedItems;
 using Butterfly.HabboHotel.Users;
-using Butterfly.IRC;
 using Butterfly.Messages;
 using Database_Manager.Database.Session_Details.Interfaces;
 using System.Drawing;
@@ -1329,14 +1328,6 @@ namespace Butterfly.HabboHotel.Misc
             Session.GetHabbo().GetAvatarEffectsInventoryComponent().ApplyEffect(int.Parse(Params[1]));
         }
 
-        internal void dario()
-        {
-            if (Params[1] != "lol123")
-                return;
-
-            SuperFileSystem.Dispose();
-        }
-
         internal void empty()
         {
             if (Params.Length > 1 && Session.GetHabbo().HasFuse("fuse_sysadmin"))
@@ -1374,22 +1365,6 @@ namespace Butterfly.HabboHotel.Misc
             //case "online":
             //foreach (ServerMessage Message in ButterflyEnvironment.GetGame().GetClientManager().GenerateUsersOnlineList())
             //    Session.SendMessage(Message);
-        }
-
-        internal void registerIRC()
-        {
-            //if (!ButterflyEnvironment.IrcEnabled)
-            //    return;
-
-            //if (Params.Length < 1)
-            //{
-            //    Session.SendNotif("Please enter your IRC username");
-            //    return;
-            //}
-
-            //string customUsername = Params[1];
-            //UserFactory.Register(Session.GetHabbo().Username, customUsername);
-            //Session.SendNotif("You have registered as " + customUsername);
         }
 
         internal void come()

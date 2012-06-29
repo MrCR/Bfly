@@ -23,13 +23,11 @@ namespace Butterfly
         private static Game Game;
         internal static DateTime ServerStarted;
         private static DatabaseManager manager;
-        //internal static IRCBot messagingBot;
-        internal static bool IrcEnabled;
         internal static bool groupsEnabled;
         internal static bool SystemMute;
         internal static bool useSSO;
         internal static bool isLive;
-        internal const string PrettyVersion = "Butterfly Emulator r96";
+        internal const string PrettyVersion = "NewBfly Emulator: V1";
         internal static bool diagPackets = false;
         internal static int timeout = 500;
         internal static DatabaseType dbType;
@@ -42,14 +40,15 @@ namespace Butterfly
             DateTime Start = DateTime.Now;
             SystemMute = false;
 
-            IrcEnabled = false;
             ServerStarted = DateTime.Now;
             Console.Title = "Loading Butterfly Emulator";
             DefaultEncoding = Encoding.Default;
+            //Logging.rzFlag();
+            Logging.WriteLine();
             Logging.WriteLine(PrettyVersion);
 
-            Logging.WriteLine("");
-            Logging.WriteLine("");
+            
+            
 
             cultureInfo = CultureInfo.CreateSpecificCulture("en-GB");
             LanguageLocale.Init();
@@ -60,12 +59,6 @@ namespace Butterfly
                 PetCommandHandeler.Init();
                 PetLocale.Init();
                 Configuration = new ConfigurationData(System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath,@"Settings/configuration.ini"));
-
-               /* if (ButterflyEnvironment.GetConfig().data["db.password"].Length == 0)
-                {
-                    throw new ArgumentException("For security reasons, your MySQL password cannot be left blank. Change your password to start the server.");
-                }*/
-
                 if (ButterflyEnvironment.GetConfig().data["db.password"] == "changeme")
                 {
                     throw new ArgumentException("Your MySQL password may not be 'changeme'.\nChange your password to start the server.");
@@ -107,8 +100,6 @@ namespace Butterfly
                 string[] arrayshit = ButterflyEnvironment.GetConfig().data["mus.tcp.allowedaddr"].Split(Convert.ToChar(","));
                 
                 MusSystem = new MusSocket(ButterflyEnvironment.GetConfig().data["mus.tcp.bindip"], int.Parse(ButterflyEnvironment.GetConfig().data["mus.tcp.port"]), arrayshit, 0);
-                
-                //InitIRC(); 
 
                 groupsEnabled = false;
                 if (Configuration.data.ContainsKey("groups.enabled"))
@@ -144,10 +135,6 @@ namespace Butterfly
                     Logging.DisablePrimaryWriting(false);
                 }
 
-                //Console.Beep();
-
-                //Logging.LogCriticalException("FATAIL FAILURE");
-
             }
             catch (KeyNotFoundException e)
             {
@@ -179,47 +166,6 @@ namespace Butterfly
                 Environment.Exit(1);
             }
         }
-
-        internal static void InitIRC()
-        {
-            //if (ButterflyEnvironment.GetConfig().data["irc.enabled"] == "true")
-            //{
-            //    UserFactory.Init();
-
-            //    messagingBot = new IRCBot(
-            //        ButterflyEnvironment.GetConfig().data["irc.server"],
-            //        int.Parse(ButterflyEnvironment.GetConfig().data["irc.port"]),
-            //        ButterflyEnvironment.GetConfig().data["irc.user"],
-            //        ButterflyEnvironment.GetConfig().data["irc.nick"],
-            //        ButterflyEnvironment.GetConfig().data["irc.channel"],
-            //        ButterflyEnvironment.GetConfig().data["irc.password"]);
-
-            //    messagingBot.Start();
-            //    IrcEnabled = true;
-            //}
-        }
-
-        //private static string encodeVL64(int i)
-        //{
-        //    byte[] wf = new byte[6];
-        //    int pos = 0;
-        //    int startPos = pos;
-        //    int bytes = 1;
-        //    int negativeMask = i >= 0 ? 0 : 4;
-        //    i = Math.Abs(i);
-        //    wf[pos++] = (byte)(64 + (i & 3));
-        //    for (i >>= 2; i != 0; i >>= 6)
-        //    {
-        //        bytes++;
-        //        wf[pos++] = (byte)(64 + (i & 0x3f));
-        //    }
-
-        //    wf[startPos] = (byte)(wf[startPos] | bytes << 3 | negativeMask);
-
-        //    System.Text.ASCIIEncoding encoder = new ASCIIEncoding();
-        //    string tmp = encoder.GetString(wf);
-        //    return tmp.Replace("\0", "");
-        //}
 
         internal static bool EnumToBool(string Enum)
         {

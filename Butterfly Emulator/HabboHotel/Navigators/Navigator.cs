@@ -121,20 +121,11 @@ namespace Butterfly.HabboHotel.Navigators
         internal ServerMessage SerializePublicRooms()
         {
             ServerMessage Frontpage = new ServerMessage(450);
-            Frontpage.AppendInt32(this.PublicItems.Count);
+            Frontpage.AppendInt32(GetCountForParent(-1));
 
             foreach (PublicItem Pub in PublicItems.Values)
             {
-                if (Pub.Category)
-                {
-                    Pub.Serialize(Frontpage);
-                    this.SerializeItemsFromCata(Pub.Id, Frontpage);
-                }
-
-                if (!Pub.Category && Pub.ParentId == 0)
-                {
-                    Pub.Serialize(Frontpage);
-                }
+                Pub.Serialize(Frontpage);
             }
 
             return Frontpage;

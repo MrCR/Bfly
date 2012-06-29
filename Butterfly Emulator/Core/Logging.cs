@@ -23,7 +23,7 @@ namespace Butterfly.Core
             }
         }
 
-        internal static void WriteLine(string Line)
+        internal static void WriteLine(string Line = "")
         {
             Writer.WriteLine(Line);
         }
@@ -89,6 +89,14 @@ namespace Butterfly.Core
         internal static void LogShutdown(StringBuilder builder)
         {
             Writer.LogShutdown(builder);
+        }
+        public static void rzFlag()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue; for (int i = 0; i < 20; i++) { Console.Write("█"); }
+            Console.ForegroundColor = ConsoleColor.White; for (int i = 0; i < 20; i++) { Console.Write("█"); }
+            Console.ForegroundColor = ConsoleColor.Blue; for (int i = 0; i < 20; i++) { Console.Write("█"); }
+            Console.ForegroundColor = ConsoleColor.White; for (int i = 0; i < 20; i++) { Console.Write("█"); }
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

@@ -416,7 +416,7 @@ namespace Butterfly.Messages
 
                 case 57:
                     {
-                        commandHandler.registerIRC();
+                        // RegisterIRC was here :(
                         break;
                     }
                 case 58:
@@ -473,11 +473,7 @@ namespace Butterfly.Messages
                         commandHandler.Fly();
                         break;
                     }
-                case 400:
-                    {
-                        //commandHandler.dario();
-                        break;
-                    }
+
             }
         }
         #endregion

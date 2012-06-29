@@ -394,7 +394,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
 
 
             //{
-            //    InventoryItems.Remove(GetItem(Id));
+             //   InventoryItems.Remove(GetItem(Id));
 
             //    using (DatabaseClient dbClient = ButterflyEnvironment.GetDatabase().GetClient())
             //    {

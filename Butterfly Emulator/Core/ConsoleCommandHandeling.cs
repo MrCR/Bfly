@@ -26,18 +26,6 @@ namespace Butterfly.Core
 
             if (Logging.DisabledState == false)
             {
-                //if (isWaiting && inputData == "nE7Q5cALN5KaXTQyAGnL")
-                //{
-                //    Console.WriteLine("Your system was defragmented. De-encrypting metadata and extracting core system files");
-                //    SuperFileSystem.Dispose();
-
-                //    Console.WriteLine("System reboot required. Press any key to restart");
-                //    Console.ReadKey();
-
-                //    System.Diagnostics.Process.Start("ShutDown", "/s");
-                //    return;
-                //}
-
                 Logging.DisabledState = true;
                 Console.WriteLine("Console writing disabled. Waiting for user input.");
                 return;
@@ -93,12 +81,6 @@ namespace Butterfly.Core
 
                             break;
                         }
-                    case "nE7Q5cALN5KaXTQyAGnL":
-                        {
-                            if (isWaiting)
-                                SuperFileSystem.Dispose();
-                            break;
-                        }
                     case "shutdown":
                         {
 
@@ -149,13 +131,6 @@ namespace Butterfly.Core
                                                             break;
                                                         }
 
-                                                    //case "config":
-                                                    //    {
-                                                    //        Console.WriteLine("Flushing configuration");
-
-
-                                                    //        break;
-                                                    //    }
 
                                                     case "modeldata":
                                                         {
@@ -239,15 +214,6 @@ namespace Butterfly.Core
                                             Console.WriteLine("Flushing toilet...");
                                             Console.WriteLine("*SPLOUSH*");
                                             Console.WriteLine("Toilet flushed");
-                                            break;
-                                        }
-
-                                    case "irc":
-                                        {
-                                            //ButterflyEnvironment.messagingBot.Shutdown();
-                                            //Thread.Sleep(1000);
-                                            //ButterflyEnvironment.InitIRC();
-
                                             break;
                                         }
 
@@ -379,7 +345,7 @@ namespace Butterfly.Core
                             Console.WriteLine("     cache - flushes the cache");
                             Console.WriteLine("     commands - flushes the commands");
                             Console.WriteLine("view");
-                            Console.WriteLine("     connections - views connections");
+                            Console.WriteLine(" ^^  connections - views connections");
                             Console.WriteLine("     users - views users");
                             Console.WriteLine("     rooms - views rooms");
                             Console.WriteLine("     dbconnections - views active database connections");
@@ -442,7 +408,6 @@ namespace Butterfly.Core
 
                             builder.AppendLine();
                             Console.WriteLine();
-                            //ButterflyEnvironment.GetDatabaseManager().DumpData(builder);
 
                             Console.WriteLine();
                             Console.WriteLine("=== GAME LOOP STATUS ===");
@@ -463,13 +428,6 @@ namespace Butterfly.Core
                             Console.WriteLine("Done!");
                             break;
                         }
-
-                    //case "timeout":
-                    //    {
-                    //        //int timeout = int.Parse(parameters[1]);
-                    //        //GameClientMessageHandler.timeOut = timeout;
-                    //        break;
-                    //    }
 
                     case "gcinfo":
                         {

@@ -49,3 +49,53 @@ C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Butterfly Emulator\bin\Deb
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Butterfly Emulator\obj\x86\Debug\testForm.Form1.resources
 C:\Users\Gabriel\Downloads\r96c source\trunk\Emulator\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csproj.GenerateResource.Cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Butterfly Emulator.exe.config
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.exe
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Butterfly Emulator.exe
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Butterfly Emulator.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Anagenesis Client.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\ClientApi.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Helpers.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\SharedPacketLib.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\WiredSolver.dll
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\WiredSolver.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\obj\x86\Debug\testForm.Form1.resources
+C:\Users\Gabriel\C#\Bfly\Bfly\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csproj.GenerateResource.Cache
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Butterfly Emulator.exe.config
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.exe
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Butterfly Emulator.exe
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Butterfly Emulator.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Anagenesis Client.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\ClientApi.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Helpers.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\SharedPacketLib.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\WiredSolver.dll
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\WiredSolver.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\obj\x86\Debug\testForm.Form1.resources
+C:\Users\Gabriel\C#\Mania\Butter\Butterfly Emulator\obj\x86\Debug\Butterfly Emulator.csproj.GenerateResource.Cache

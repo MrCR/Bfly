@@ -1031,6 +1031,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
             switch (Item.GetBaseItem().InteractionType)
             {
+                // TO-REVIEW
                 #region Triggers
 
                 case InteractionType.triggerwalkonfurni:
@@ -1056,6 +1057,15 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
                 case InteractionType.triggergamestart:
                     {
+                        ServerMessage Message = new ServerMessage(650);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(5);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                        Message.AppendInt32((int)Item.Id);
+                        Message.AppendStringWithBreak("HHPBH");
+                        Session.SendMessage(Message);
+                        /*
                         ServerMessage message = new ServerMessage(
                             );
                         message.AppendBoolean(false);
@@ -1070,7 +1080,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
                         message.AppendBoolean(false);
                         message.AppendByte(2);
 
-                        Session.SendMessage(message);
+                        Session.SendMessage(message);*/
                         break;
                     }
 
@@ -1116,22 +1126,28 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
                 case InteractionType.triggertimer:
                     {
-                        ServerMessage message = new ServerMessage(650);
-                        message.AppendBoolean(false);
-                        message.AppendInt32(5);
-                        message.AppendBoolean(false);
-                        message.AppendInt32(Item.GetBaseItem().SpriteId);
-                        message.AppendUInt(Item.Id);
+                        int Counter1;
 
-                        message.AppendByte(2);
-                        message.AppendBoolean(true);
-                        message.AppendBoolean(true);
-                        message.AppendBoolean(true);
-                        message.AppendInt32(3);
-                        message.AppendBoolean(false);
-                        message.AppendByte(2);
+                        using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
+                        {
+                            dbClient.setQuery("SELECT trigger_data FROM trigger_item WHERE trigger_id = @id ");
+                            dbClient.addParameter("id", (int)Item.Id);
+                            Counter1 = dbClient.getInteger();
+                        }
 
-                        Session.SendMessage(message);
+                        ServerMessage Message = new ServerMessage(650);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(5);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                        Message.AppendInt32((int)Item.Id);
+                        Message.AppendInt32(1);
+                        Message.AppendInt32(Counter1);
+                        Message.AppendStringWithBreak("IKH");
+                        Message.AppendInt32(1);
+                        Message.AppendInt32(Counter1);
+                        Message.AppendStringWithBreak("IKH");
+                        Session.SendMessage(Message);
                         break;
                     }
 
@@ -1158,19 +1174,51 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
                 case InteractionType.triggeronusersay:
                     {
-                        ServerMessage message = new ServerMessage(650);
-                        message.AppendBoolean(false);
-                        message.AppendBoolean(false);
-                        message.AppendBoolean(false);
-                        message.AppendInt32(Item.GetBaseItem().SpriteId);
-                        message.AppendUInt(Item.Id);
+                        string Word = "";
 
-                        Session.SendMessage(message);
+                        using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
+                        {
+                            dbClient.setQuery("SELECT trigger_data FROM trigger_item WHERE trigger_id = @id ");
+                            dbClient.addParameter("id", (int)Item.Id);
+                            Word = dbClient.getString();
+                        }
+
+                        ServerMessage Message = new ServerMessage(650);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(5);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                        Message.AppendInt32((int)Item.Id);
+                        Message.AppendStringWithBreak(Word);
+                        Session.SendMessage(Message);
                         break;
                     }
 
                 case InteractionType.triggerscoreachieved:
                     {
+                        int Counter1;
+
+                        using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
+                        {
+                            dbClient.setQuery("SELECT trigger_data FROM trigger_item WHERE trigger_id = @id ");
+                            dbClient.addParameter("id", (int)Item.Id);
+                            Counter1 = dbClient.getInteger();
+                        }
+
+                        ServerMessage Message = new ServerMessage(650);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(5);
+                        Message.AppendInt32(0);
+                        Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                        Message.AppendInt32((int)Item.Id);
+                        Message.AppendInt32(1);
+                        Message.AppendInt32(Counter1);
+                        Message.AppendStringWithBreak("HRBH");
+                        Message.AppendInt32(1);
+                        Message.AppendInt32(Counter1);
+                        Message.AppendStringWithBreak("HRBH");
+                        Session.SendMessage(Message);
+                        /*
                         ServerMessage message = new ServerMessage(650);
                         message.AppendBoolean(false);
                         message.AppendInt32(5);
@@ -1187,6 +1235,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
                         message.AppendByte(2);
 
                         Session.SendMessage(message);
+                         * */
                         break;
                     }
 
@@ -1275,7 +1324,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
                     {
 
                         int Counter1;
-                        ServerMessage message = new ServerMessage(651);
+                        
                         using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
                         {
                             dbClient.setQuery("SELECT trigger_data FROM trigger_item WHERE trigger_id = @id ");
@@ -1284,130 +1333,137 @@ namespace Butterfly.HabboHotel.Items.Interactors
                         }
                         if (Counter1 != 0)
                         {
-                            message.AppendBoolean(false);
-                            message.AppendInt32(5);
-                            message.AppendBoolean(true);
-                            message.AppendInt32(Item.GetBaseItem().SpriteId);
-                            message.AppendInt32((int)Item.Id);
+
+                            ServerMessage Message = new ServerMessage(651);
+                            Message.AppendInt32(0);
+                            Message.AppendInt32(5);
+                            Message.AppendInt32(0);
+                            Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                            Message.AppendInt32((int)Item.Id);
+                            #region TimeOn
 
                             if (Counter1 == 1)
                             {
-                                message.AppendStringWithBreak("HHIIH");
-                                message.AppendStringWithBreak("HHIIH");
+                                Message.AppendStringWithBreak("HHIIH");
+                                Message.AppendStringWithBreak("HHIIH");
                             }
                             else if (Counter1 == 2)
                             {
-                                message.AppendStringWithBreak("HHIJH");
-                                message.AppendStringWithBreak("HHIJH");
+                                Message.AppendStringWithBreak("HHIJH");
+                                Message.AppendStringWithBreak("HHIJH");
                             }
                             else if (Counter1 == 3)
                             {
-                                message.AppendStringWithBreak("HHIKH");
-                                message.AppendStringWithBreak("HHIKH");
+                                Message.AppendStringWithBreak("HHIKH");
+                                Message.AppendStringWithBreak("HHIKH");
                             }
                             else if (Counter1 == 4)
                             {
-                                message.AppendStringWithBreak("HHIPAH");
-                                message.AppendStringWithBreak("HHIPAH");
+                                Message.AppendStringWithBreak("HHIPAH");
+                                Message.AppendStringWithBreak("HHIPAH");
                             }
 
                             else if (Counter1 == 5)
                             {
-                                message.AppendStringWithBreak("HHIQAH");
-                                message.AppendStringWithBreak("HHIQAH");
+                                Message.AppendStringWithBreak("HHIQAH");
+                                Message.AppendStringWithBreak("HHIQAH");
                             }
                             else if (Counter1 == 6)
                             {
-                                message.AppendStringWithBreak("HHIRAH");
-                                message.AppendStringWithBreak("HHIRAH");
+                                Message.AppendStringWithBreak("HHIRAH");
+                                Message.AppendStringWithBreak("HHIRAH");
                             }
                             else if (Counter1 == 7)
                             {
-                                message.AppendStringWithBreak("HHISAH");
-                                message.AppendStringWithBreak("HHISAH");
+                                Message.AppendStringWithBreak("HHISAH");
+                                Message.AppendStringWithBreak("HHISAH");
                             }
                             else if (Counter1 == 8)
                             {
-                                message.AppendStringWithBreak("HHIPBH");
-                                message.AppendStringWithBreak("HHIPBH");
+                                Message.AppendStringWithBreak("HHIPBH");
+                                Message.AppendStringWithBreak("HHIPBH");
                             }
                             else if (Counter1 == 9)
                             {
-                                message.AppendStringWithBreak("HHIQBH");
-                                message.AppendStringWithBreak("HHIQBH");
+                                Message.AppendStringWithBreak("HHIQBH");
+                                Message.AppendStringWithBreak("HHIQBH");
                             }
                             else if (Counter1 == 10)
                             {
-                                message.AppendStringWithBreak("HHIRBH");
-                                message.AppendStringWithBreak("HHIRBH");
+                                Message.AppendStringWithBreak("HHIRBH");
+                                Message.AppendStringWithBreak("HHIRBH");
                             }
                             else if (Counter1 == 11)
                             {
-                                message.AppendStringWithBreak("HHISBH");
-                                message.AppendStringWithBreak("HHISBH");
+                                Message.AppendStringWithBreak("HHISBH");
+                                Message.AppendStringWithBreak("HHISBH");
                             }
                             else if (Counter1 == 12)
                             {
-                                message.AppendStringWithBreak("HHIPCH");
-                                message.AppendStringWithBreak("HHIPCH");
+                                Message.AppendStringWithBreak("HHIPCH");
+                                Message.AppendStringWithBreak("HHIPCH");
                             }
                             else if (Counter1 == 13)
                             {
-                                message.AppendStringWithBreak("HHIQCH");
-                                message.AppendStringWithBreak("HHIQCH");
+                                Message.AppendStringWithBreak("HHIQCH");
+                                Message.AppendStringWithBreak("HHIQCH");
                             }
                             else if (Counter1 == 14)
                             {
-                                message.AppendStringWithBreak("HHIRCH");
-                                message.AppendStringWithBreak("HHIRCH");
+                                Message.AppendStringWithBreak("HHIRCH");
+                                Message.AppendStringWithBreak("HHIRCH");
                             }
                             else if (Counter1 == 15)
                             {
-                                message.AppendStringWithBreak("HHISCH");
-                                message.AppendStringWithBreak("HHISCH");
+                                Message.AppendStringWithBreak("HHISCH");
+                                Message.AppendStringWithBreak("HHISCH");
                             }
                             else if (Counter1 == 16)
                             {
-                                message.AppendStringWithBreak("HHIPDH");
-                                message.AppendStringWithBreak("HHIPDH");
+                                Message.AppendStringWithBreak("HHIPDH");
+                                Message.AppendStringWithBreak("HHIPDH");
                             }
                             else if (Counter1 == 17)
                             {
-                                message.AppendStringWithBreak("HHIQDH");
-                                message.AppendStringWithBreak("HHIQDH");
+                                Message.AppendStringWithBreak("HHIQDH");
+                                Message.AppendStringWithBreak("HHIQDH");
                             }
                             else if (Counter1 == 18)
                             {
-                                message.AppendStringWithBreak("HHIRDHH");
-                                message.AppendStringWithBreak("HHIRDHH");
+                                Message.AppendStringWithBreak("HHIRDHH");
+                                Message.AppendStringWithBreak("HHIRDHH");
                             }
                             else if (Counter1 == 19)
                             {
-                                message.AppendStringWithBreak("HHISDH");
-                                message.AppendStringWithBreak("HHISDH");
+                                Message.AppendStringWithBreak("HHISDH");
+                                Message.AppendStringWithBreak("HHISDH");
                             }
                             else if (Counter1 == 20)
                             {
-                                message.AppendStringWithBreak("HHIPEH");
-                                message.AppendStringWithBreak("HHIPEH");
+                                Message.AppendStringWithBreak("HHIPEH");
+                                Message.AppendStringWithBreak("HHIPEH");
                             }
                             else
-                                message.AppendStringWithBreak("HHIHH");
-                            message.AppendStringWithBreak("HHIHH");
+                                Message.AppendStringWithBreak("HHIHH");
+                            Message.AppendStringWithBreak("HHIHH");
+
+
+                            #endregion
+                            Session.SendMessage(Message);
                         }
 
                         else
                         {
-                            message.AppendInt32(0);
-                            message.AppendInt32(5);
-                            message.AppendInt32(0);
-                            message.AppendInt32(Item.GetBaseItem().SpriteId);
-                            message.AppendInt32((int)Item.Id);
-                            message.AppendStringWithBreak("HHIHH");
-                            message.AppendStringWithBreak("HHIHH");
+                            ServerMessage Message = new ServerMessage(651);
+                            Message.AppendInt32(0);
+                            Message.AppendInt32(5);
+                            Message.AppendInt32(0);
+                            Message.AppendInt32(Item.GetBaseItem().SpriteId);
+                            Message.AppendInt32((int)Item.Id);
+                            Message.AppendStringWithBreak("HHIHH");
+                            Message.AppendStringWithBreak("HHIHH");
+                            Session.SendMessage(Message);
                         }
-
-                        Session.SendMessage(message);
                         break;
                     }
 
