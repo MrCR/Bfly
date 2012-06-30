@@ -281,7 +281,7 @@ namespace Butterfly.HabboHotel.GameClients
             }
             catch (Exception e)
             {
-                Logging.LogCriticalException("Invalid Dario bug duing user login: " + e.ToString());
+                //Logging.LogCriticalException("Invalid Dario bug duing user login: " + e.ToString());
                 //SendNotif("Login error: " + e.ToString());
                 SendNotifWithScroll("Login error: " + e.ToString());
             }

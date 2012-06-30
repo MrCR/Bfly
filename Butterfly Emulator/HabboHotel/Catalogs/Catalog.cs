@@ -182,9 +182,13 @@ namespace Butterfly.HabboHotel.Catalogs
 
             foreach (CatalogPage Page in Pages.Values)
             {
-                if (Page.MinRank > rank)
+
+                if (Page.MinRank != rank)
                 {
-                    continue;
+                    if (Page.MinRank > rank)
+                    {
+                        continue;
+                    }
                 }
 
                 if (Page.ParentId == TreeId)
@@ -221,9 +225,12 @@ namespace Butterfly.HabboHotel.Catalogs
             {
                 return;
             }
-            if (Page.MinRank > Session.GetHabbo().Rank)
+            if (Session.GetHabbo().Rank != Page.MinRank) // Workaround
             {
-                return;
+                if (Session.GetHabbo().Rank < Page.MinRank)
+                {
+                    return;
+                }
             }
             CatalogItem Item = Page.GetItem(ItemId);
 
@@ -965,7 +972,9 @@ namespace Butterfly.HabboHotel.Catalogs
 
             foreach (CatalogPage Page in Pages.Values)
             {
-                if (Page.ParentId != -1 || Page.MinRank > rank)
+                    if (rank < Page.MinRank)
+                        continue;
+                if (Page.ParentId != -1)
                     continue;
 
                 Page.Serialize(rank, Index);

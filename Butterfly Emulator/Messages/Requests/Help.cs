@@ -322,8 +322,8 @@ namespace Butterfly.Messages
         {
             if (Session.GetHabbo().SpectatorMode)
             {
-                Session.GetHabbo().SpectatorMode = false;
-                Session.SendNotif(LanguageLocale.GetValue("invisible.disabled"));
+                Session.GetHabbo().SpectatorMode = false;// Only for disable Spectator Mode
+                Session.SendNotif(LanguageLocale.GetValue("invisible.disabled")); 
             }
             else
             {

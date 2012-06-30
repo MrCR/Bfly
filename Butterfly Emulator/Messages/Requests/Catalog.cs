@@ -20,7 +20,7 @@ namespace Butterfly.Messages
         {
             CatalogPage Page = ButterflyEnvironment.GetGame().GetCatalog().GetPage(Request.PopWiredInt32());
 
-            if (Page == null || !Page.Enabled || !Page.Visible || Page.ComingSoon || Page.MinRank > Session.GetHabbo().Rank)
+            if (Page == null || !Page.Enabled || !Page.Visible || Page.ComingSoon ||  Session.GetHabbo().Rank < Page.MinRank)
             {
                 return;
             }
